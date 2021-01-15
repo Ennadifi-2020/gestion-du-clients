@@ -52,6 +52,7 @@ namespace gestion_clients
             this.villesTableAdapter = new gestion_clients.gestion_cltDataSetTableAdapters.villesTableAdapter();
             this.btn_trie = new System.Windows.Forms.Button();
             this.cbville = new System.Windows.Forms.ComboBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).BeginInit();
@@ -114,15 +115,16 @@ namespace gestion_clients
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Location = new System.Drawing.Point(15, 216);
+            this.groupBox1.Location = new System.Drawing.Point(15, 181);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(271, 196);
+            this.groupBox1.Size = new System.Drawing.Size(184, 232);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -131,10 +133,10 @@ namespace gestion_clients
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(155, 116);
+            this.button5.Location = new System.Drawing.Point(30, 150);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 46);
+            this.button5.Size = new System.Drawing.Size(116, 32);
             this.button5.TabIndex = 16;
             this.button5.Text = "Mise à jour";
             this.button5.UseVisualStyleBackColor = false;
@@ -144,10 +146,10 @@ namespace gestion_clients
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(25, 39);
+            this.button1.Location = new System.Drawing.Point(30, 21);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 43);
+            this.button1.Size = new System.Drawing.Size(116, 30);
             this.button1.TabIndex = 12;
             this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,10 +159,10 @@ namespace gestion_clients
             // 
             this.button2.BackColor = System.Drawing.Color.Blue;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(25, 116);
+            this.button2.Location = new System.Drawing.Point(30, 104);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 46);
+            this.button2.Size = new System.Drawing.Size(116, 37);
             this.button2.TabIndex = 13;
             this.button2.Text = "Modifier";
             this.button2.UseVisualStyleBackColor = false;
@@ -170,10 +172,10 @@ namespace gestion_clients
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(155, 39);
+            this.button3.Location = new System.Drawing.Point(30, 58);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 43);
+            this.button3.Size = new System.Drawing.Size(116, 40);
             this.button3.TabIndex = 14;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = false;
@@ -183,12 +185,12 @@ namespace gestion_clients
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(312, 206);
+            this.dataGridView1.Location = new System.Drawing.Point(221, 206);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(556, 216);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 216);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -279,6 +281,19 @@ namespace gestion_clients
             this.cbville.TabIndex = 20;
             this.cbville.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(30, 193);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(116, 32);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Nouveau";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,6 +352,7 @@ namespace gestion_clients
         private System.Windows.Forms.BindingSource villesBindingSource1;
         private System.Windows.Forms.Button btn_trie;
         private System.Windows.Forms.ComboBox cbville;
+        private System.Windows.Forms.Button button7;
     }
 }
 

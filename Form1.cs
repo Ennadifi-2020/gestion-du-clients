@@ -186,5 +186,32 @@ namespace gestion_clients
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            VIDER(this);
+        }
+        public void VIDER(Control f)
+        ///  nouvou *
+        {
+            foreach (Control ct in f.Controls)
+            {
+                if (ct.GetType() == typeof(TextBox))
+                {
+                    ct.Text = "";
+                }
+                else if (ct.GetType() == typeof(ComboBox))
+                {
+                    ct.Text = "";
+                }
+
+                if (ct.Controls.Count != 0)
+                {
+                    VIDER(ct);
+                }
+
+            }
+        }
     }
+
 }
